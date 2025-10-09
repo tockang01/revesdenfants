@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faire un don a RvE</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <header id="SITE_HEADER" class="header">
+        <div class="logo">
+           
+             <a href="index.html"> <img src="logo.jpg" class="logot" ></a>
+        </div>
+        <nav class="nav-links">
+            
+            <a href="aproposdenous+lequipe.html">A PROPOS DE NOUS</a>
+            <a href="projets.html">PROJETS</a>
+            <a href="realisations.html">REALISATIONS</a>
+            <a href="#contacts">NOUS CONTACTER</a>
+            <a href="faireundon.html"><button class="don" >FAIRE UN DON</button></a>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <h1>Faire un don</h1>
+        
+        <form id="joinForm" action="page3.php" class="join-form">
+            <div class="form-group">
+                <label for="email">Adresse email *</label>
+                <input type="email" id="email" name="email" required placeholder="votre@email.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom et prénom">
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone">
+            </div>
+            
+            <div class="form-group">
+                <label for="interest">Domaine d'intérêt</label>
+                <select id="interest" name="interest">
+                    <option value="">-- Sélectionnez --</option>
+                    <option value="culture">Développement culturel</option>
+                    <option value="education">Éducation</option>
+                    <option value="sante">Santé</option>
+                    <option value="solidarite">Actions solidaires</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message (facultatif)</label>
+                <textarea id="message" name="message" rows="2" placeholder="Pourquoi souhaitez-vous nous rejoindre ?"></textarea>
+            </div>
+            
+            <button type="submit" class="don2">Envoyer ma demande</button>
+            
+            <div id="confirmation" class="confirmation">
+                <p>Merci pour votre demande ! Nous vous contacterons bientôt.</p>
+            </div>
+        </form>
+    </main>
+    <section class="partners-section">
+        <h2 class="partners-title">Nos Partenaires</h2>
+        
+        <div class="partners-grid">
+            <!-- Logo 1 -->
+            <img src="9.jpg" alt="UNICEF" class="partner-logo">
+            
+            <!-- Logo 2 -->
+            <img src="10.png" alt="Orange" class="partner-logo">
+            
+            <!-- Logo 3 -->
+            <img src="11.png" alt="MTN" class="partner-logo">
+            
+            <!-- Logo 4 -->
+            <img src="12.jpg" alt="Amazon" class="partner-logo">
+            
+            <!-- Logo 5 -->
+            <img src="13.png" alt="VIDA" class="partner-logo">
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <!-- Section Contact -->
+            <div id= "contacts" class="footer-section contact-info">
+                <h3>Nous Contacter</h3>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>FOULED-SMALTO, YAOUNDE,CAMEROUN</span>
+                </p>
+                <p>
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+237 688648808</span>
+                </p>
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <span>rvedenfants@gmail.com</span>
+                    
+                </p>
+                 <p>
+                    <i class="fas fa-envelope"></i>
+                    <span>rvedenfants@gmail.com</span>
+                    
+                </p>
+               
+            </div>
+
+           
+            <!-- Section Réseaux sociaux -->
+            <div class="footer-section social-links">
+                <h3>Suivez-nous</h3>
+                <p>Restez connectés avec nos activités</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61575463132088" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/rvedenfants" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    
+                </div>
+                
+            </div> 
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024 RVE Cameroun. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('joinForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Ici vous pourriez ajouter du code pour envoyer les données à un serveur
+            // Pour l'instant, nous affichons simplement un message de confirmation
+            
+            document.getElementById('confirmation').style.display = 'block';
+            this.reset();
+            
+            // Faire défiler jusqu'au message de confirmation
+            document.getElementById('confirmation').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    
+</body>
+
+</html>
