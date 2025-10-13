@@ -7,16 +7,12 @@
     <title>rve-cameroun</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        
-        
-        
         .main-content1{
             max-width: 900px;
             margin: 50px auto;
             padding: 0 20px;
             margin-top: 175px;
         }
-        
         h1 {
             font-size: 2.8rem;
             color: #1558ae;
@@ -24,7 +20,6 @@
             text-align: center;
             position: relative;
         }
-        
         h1::after {
             content: '';
             position: absolute;
@@ -35,7 +30,6 @@
             height: 3px;
             background: #5F9EA0;
         }
-        
         .mission-section {
             background-color: white;
             padding: 40px;
@@ -43,12 +37,10 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             margin-bottom: 40px;
         }
-        
         p {
             margin-bottom: 20px;
             font-size: 1.1rem;
         }
-        
         .quote {
             font-style: italic;
             font-size: 1.3rem;
@@ -59,21 +51,17 @@
             border-left: 4px solid #1558ae;
             background-color: #f8f9fa;
         }
-        
         .values {
             margin-top: 40px;
         }
-        
         .values h2 {
             color: #1558ae;
             margin-bottom: 20px;
         }
-        
         .values ul {
             list-style-position: inside;
             margin-left: 20px;
         }
-        
         .values li {
             margin-bottom: 10px;
         }
@@ -81,7 +69,6 @@
             h1 {
                 font-size: 2rem;
             }
-            
             .mission-section {
                 padding: 20px;
             }
@@ -91,22 +78,44 @@
 <body>
     <header id="SITE_HEADER" class="header">
         <div class="logo">
-           
              <a href="index.html"> <img src="logo.jpg" class="logot" ></a>
         </div>
         <nav class="nav-links">
-            
-            <a href="aproposdenous+lequipe.html">A PROPOS DE NOUS</a>
-            <a href="projets.html">PROJETS</a>
-            <a href="realisations.html">REALISATIONS</a>
+            <div class="dropdown">
+            <a href="aproposdenous+lequipe.html" class="dropbtn">A PROPOS DE NOUS</a>
+            <ul class="dropdown-content">
+                <li><a href="aproposdenous+lequipe.html">Notre vision</a></li>
+                <li><a href="missions.html">Nos missions</a></li>
+                <li><a href="https://www.unicef.fr/convention-droits-enfants">Les droits de l'enfant</a></li>
+            </ul>
+        </div>
+            <div class="dropdown">
+            <a href="projets.html" class="dropbtn" >PROJETS</a>
+            <ul class="dropdown-content">
+                <li><a href="projets.html">Projets Réalisés</a></li>
+                <li><a href="projets.html">Projets en cours</a></li>
+                <li><a href="projets.html">Idée de Projets</a></li>
+            </ul>
+            </div>
+            <div class="dropdown">
+            <a href="realisations.html" class="dropbtn">REALISATIONS</a>
+            <ul class="dropdown-content">
+                <li><a href="realisations.html">Conference sur...</a></li>
+                <li><a href="realisations.html">Collecte de fond pour...</a></li>
+            </ul>
+            </div>
             <a href="#contacts">NOUS CONTACTER</a>
-            <a href="faireundon.html"><button class="don" >FAIRE UN DON</button></a>
+            <div class="dropdown">
+            <a href="faireundon.html"><button class="don" >S'ENGAGER</button></a>
+            <ul class="dropdown-content">
+                <li><a href="faireundon.html">adhérer à RvE</a></li>
+                <li><a href="faireundon.html">Faire un don</a></li>
+            </ul>
+            </div>
         </nav>
     </header>
-
     <main class="main-content1">
         <h1>Qui sommes-nous?</h1>
-        
         <section class="mission-section">
             <p>RvE est une association à but non lucratif engagée dans le développement culturel, moral, intellectuel et physique d'hommes et de femmes au sein des communautés.</p>
             
@@ -120,17 +129,14 @@
                     <li>La solidarité</li>
                 </ul>
             </div>
-            
             <p>Nous croyons en l'humanité, à la pesanteur de la science pour son bien-être. L'association s'assigne de valoriser au sein des communautés, et partout où le besoin se fera sentir, le message de lumière que porte la science, dans l'unique perspective d'un avenir commun pérenne :</p>
             
             <div class="quote">
                 « Les uns pour les autres, les uns avec les autres et les uns par les autres. »
             </div>
-            
             <p>Notre objet vise alors, partout où il sera nécessaire, de colorer le quotidien des hommes et des femmes au sein des communautés, de refonder leurs espérances et aspirations, et de favoriser l'accomplissement de leur destin.</p>
         </section>
     </main>
-
     <main class="main-content2">
         <div class="main-content">
     <h1>Nos dernières actualités</h1>
@@ -139,7 +145,6 @@
             <button class="filter-btn active">Tous</button>
             <button class="filter-btn">Équipe</button>
         </div>
-        
         <div class="news-container">
             <!-- Article 1 -->
             <article class="news-card">
@@ -231,7 +236,6 @@
                 </div>
             </article>
         </div>
-        
         <div class="load-more">
             <button class="load-btn">Charger plus d'actualités</button>
         </div>
@@ -239,7 +243,6 @@
     <div class="main-content">
     <h1>Notre équipe</h1>
     </div>
-
 <section class="team-section">
     <div class="person-card" style="background-image: url('MBAKOP.jpeg');">
         <div class="info">
@@ -247,14 +250,12 @@
             <p>PhD, Ing. Robotique, enseignant chercheur à l’université de Lille, Steve est un enseignant d’université en Mécanique et Robotique. Il réside et travaille en France. C’est l’initiateur du projet. Il est porteur d’un projet de transformation de la société qui intègre la méta-culture et la science dans le débat socio-politique au Cameroun.</p>
         </div>
     </div>
-
     <div class="person-card" style="background-image: url('img.jpg');">
         <div class="info">
             <h2>Liliane SAMEN</h2>
             <p>Liliane est cadre du ministère de la recherche scientifique et de l’innovation au Cameroun. Son domaine d’expertise couvre l’efficacité énergétique des matériaux de construction. Elle travaille et réside au Cameroun. Ses convictions mettent le rôle la jeunesse à l’avant-garde de la société. Elle est passionnée depuis toujours par la gestion des affaires publiques compte tenu des irrégularités qu’elle a constatées et dont elle qualifie « d’inamissibles ».</p>
         </div>
     </div>
-
     <div class="person-card" style="background-image: url('Vida.webp');">
         <div class="info">
             <h2>Vida Tokodi</h2>
@@ -267,42 +268,37 @@
             <p></p>
         </div>
     </div>
-
     <div class="person-card" style="background-image: url('img.jpg');">
         <div class="info">
             <h2>Olive Manuella Mogo</h2>
             <p></p>
         </div>
     </div>
-
     <div class="person-card" style="background-image: url('img.jpg');">
         <div class="info">
             <h2>Tchaptchet Idriss</h2>
             <p></p>
         </div>
     </div>
-    
 </section>
-
-    
     <section class="partners-section">
-        <h2 class="partners-title">Nos Partenaires</h2>
+        <h2 class="partners-title">Quelques organisations humanitaires</h2>
         
         <div class="partners-grid">
             <!-- Logo 1 -->
-            <img src="9.jpg" alt="UNICEF" class="partner-logo">
+            <a href="https://www.msf.fr/"><img src="msf.jpg" alt="msf" class="partner-logo"></a>
             
             <!-- Logo 2 -->
-            <img src="10.png" alt="Orange" class="partner-logo">
+            <a href="https://www.unesco.org/fr"><img src="unesco.png" alt="Unesco" class="partner-logo"></a>
             
             <!-- Logo 3 -->
-            <img src="11.png" alt="MTN" class="partner-logo">
+            <a href="https://www.icrc.org/fr" ><img src="croixrouge.jpg" alt="croixrouge" class="partner-logo"></a>
             
             <!-- Logo 4 -->
-            <img src="12.jpg" alt="Amazon" class="partner-logo">
+            <a href="https://www.unicef.org/fr" ><img src="9.jpg" alt="UNICEF" class="partner-logo"></a>
             
             <!-- Logo 5 -->
-            <img src="13.png" alt="VIDA" class="partner-logo">
+            <a href="https://www.un.org/fr/" ><img src="ONU.png" alt="onu" class="partner-logo"></a>
         </div>
     </section>
     <footer>
@@ -320,18 +316,10 @@
                 </p>
                 <p>
                     <i class="fas fa-envelope"></i>
-                    <span>rvedenfants@gmail.com</span>
+                    <span><a href="rve@rve.com">rve@rve.chose</a></span>
                     
                 </p>
-                 <p>
-                    <i class="fas fa-envelope"></i>
-                    <span>rvedenfants@gmail.com</span>
-                    
-                </p>
-               
             </div>
-
-           
             <!-- Section Réseaux sociaux -->
             <div class="footer-section social-links">
                 <h3>Suivez-nous</h3>
@@ -339,13 +327,11 @@
                 <div class="social-icons">
                     <a href="https://www.facebook.com/profile.php?id=61575463132088" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://x.com/rvedenfants" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/rvedenfants/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     
                 </div>
-                
             </div> 
         </div>
-
         <div class="copyright">
             <p>&copy; 2024 RVE Cameroun. Tous droits réservés.</p>
         </div>

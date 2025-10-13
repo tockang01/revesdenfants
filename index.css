@@ -858,3 +858,129 @@ body, html {
     transform: scale(1.05);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
+.dropdown {
+    position: relative;
+    /* Important : pour que le dropdown soit un élément inline-flex et reste sur la même ligne */
+    display: inline-flex;
+    align-items: center;
+}
+
+.dropbtn {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* juste en dessous du lien */
+    left: 0;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 1000;
+}
+
+.dropdown-content li a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.rss-wrapper {
+  display: flex;
+  justify-content: space-around; /* espace entre les boxes */
+  align-items: flex-start; /* alignement vertical en haut */
+  gap: 20px; /* espace entre les boxes */
+  margin: 20px auto;
+  max-width: 1200px; /* largeur max du conteneur */
+}
+#rss-container {
+  margin: 30px auto; /* marge verticale + centrage horizontal */
+  max-width: 400px;  /* largeur max pour limiter la taille */
+  padding: 15px;
+  border: 2px solid #0072bc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 114, 188, 0.3);
+  text-align: center;
+}
+.rss-box {
+  flex: 1 1 30%; /* chaque box prend environ 30% de la largeur */
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  min-width: 250px; /* largeur minimale pour éviter trop petit */
+}
+
+    #rss-container h2 {
+      color: #0072bc;
+      margin-bottom: 15px;
+      font-size: 1.6em;
+      border-bottom: 2px solid #0072bc;
+      padding-bottom: 8px;
+      text-align: center;
+    }
+
+    #rss-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      height: 4em; /* hauteur fixe pour un titre */
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #rss-liste {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      height: 4em; /* hauteur fixe pour un titre */
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #rss-listes {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      height: 4em; /* hauteur fixe pour un titre */
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #rss-list li {
+      font-weight: 600;
+      font-size: 1.1em;
+      line-height: 1.3em;
+    }
+
+    #rss-list a {
+      color: #004a8f;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    #rss-list a:hover {
+      color: #0091ea;
+      text-decoration: underline;
+    }
