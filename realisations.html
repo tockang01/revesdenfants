@@ -6,6 +6,24 @@
     <title>projets et realisations</title>
      <link rel="stylesheet" href="index.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>.action-description {
+  line-height: 1.5;
+}
+
+.read-more {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+.actions-grid {
+  display: flex;              /* active le mode flexbox */
+  justify-content: center;    /* centre horizontalement les enfants */
+  gap: 20px;                  /* espace entre les articles */
+  flex-wrap: nowrap;          /* empêche le passage à la ligne */
+}
+
+</style>
    
 </head>
 <body>
@@ -19,26 +37,18 @@
             <div class="dropdown">
             <a href="aproposdenous+lequipe.html" class="dropbtn">A PROPOS DE NOUS</a>
             <ul class="dropdown-content">
-                <li><a href="aproposdenous+lequipe.html">Notre vision</a></li>
+                <li><a href="aproposdenous+lequipe.html">Qui sommes nous?</a></li>
                 <li><a href="missions.html">Nos missions</a></li>
-                <li><a href="https://www.unicef.fr/convention-droits-enfants">Les droits de l'enfant</a></li>
+                <li><a href="lesdroitsdelenfant.html">Les droits de l'enfant</a></li>
             </ul>
         </div>
         
             <div class="dropdown">
             <a href="projets.html" class="dropbtn" >PROJETS</a>
-            <ul class="dropdown-content">
-                <li><a href="projets.html">Projets Réalisés</a></li>
-                <li><a href="projets.html">Projets en cours</a></li>
-                <li><a href="projets.html">Idée de Projets</a></li>
-            </ul>
             </div>
             <div class="dropdown">
             <a href="realisations.html" class="dropbtn">REALISATIONS</a>
-            <ul class="dropdown-content">
-                <li><a href="realisations.html">Conference sur...</a></li>
-                <li><a href="realisations.html">Collecte de fond pour...</a></li>
-            </ul>
+            
             </div>
 
 
@@ -46,7 +56,7 @@
             <div class="dropdown">
             <a href="faireundon.html"><button class="don" >S'ENGAGER</button></a>
             <ul class="dropdown-content">
-                <li><a href="faireundon.html">adhérer à RvE</a></li>
+                <li><a href="adherer.html">adhérer à RvE</a></li>
                 <li><a href="faireundon.html">Faire un don</a></li>
             </ul>
             </div>
@@ -64,21 +74,23 @@
             moral, intellectuel et physique des populations.
         </p>
         
-        <div class="action-categories">
-            <button class="category-btn active">Toutes</button>
-        </div>
-        
         <div class="actions-grid">
             <!-- Action 1 -->
             <div class="action-card">
                 <div class="action-image">
-                    <img src="1.jpg" alt="Projet éducation">
+                    <img src="1.jpg" alt="Projet éducation" class="slide active">
+                    <img src="m.png" alt="Projet éducation" class="slide">
+                    <img src="m1.png" alt="Projet éducation" class="slide">
                     <span class="action-badge">Dons</span>
                 </div>
                 <div class="action-content">
-                    <div class="action-date">octobre 28, 2024</div>
+                    <div class="action-date">octobre 12, 2024</div>
                     <h3 class="action-title">Visite de l’orphelinat Ste Rita</h3>
                     <p class="action-description">
+                        <span class="petittexte">Le samedi 12 octobre 2024 était un grand jour pour notre association. Nous avons effectué notre première visite sur le terrain dans l’orphelinat Ste Rita de Yaoundé.
+
+C’est avec beaucoup d’émotions que nous avons sensibilité ces enfants sur:</span>
+                        <span style="display:none" class="longtexte">
                         Le samedi 12 octobre 2024 était un grand jour pour notre association. Nous avons effectué notre première visite sur le terrain dans l’orphelinat Ste Rita de Yaoundé.
 
 C’est avec beaucoup d’émotions que nous avons sensibilité ces enfants sur:
@@ -92,7 +104,10 @@ Nous avons clôturé cette visite par une remise de dons en nature permettant de
 Cette visite fut très enrichissante et surtout la première d’une longue série.
 
 Nous en sommes ressorties galvanisés et prêts à soutenir le plus de populations défavorisées dans notre cher et beau pays qu’est le Cameroun!!
-                    </p>
+</span>                    
+</p>
+                    
+              <a href="#" class="affichertout">en savoir plus</a> 
                     <div class="action-stats">
                         <div class="stat-item">
                             <div class="stat-number">1</div>
@@ -107,52 +122,44 @@ Nous en sommes ressorties galvanisés et prêts à soutenir le plus de populatio
                             <div class="stat-label">Formateurs</div>
                         </div>
                     </div>
-                </div>
+                </div> 
             </div>
             
-            <!-- Action 2 -->
-            <div class="action-card">
-                <div class="action-image">
-                    <img src="https://via.placeholder.com/600x400?text=Projet+Santé" alt="Projet santé">
-                    <span class="action-badge">Santé</span>
-                </div>
-                <div class="action-content">
-                    <div class="action-date">Novembre 2022</div>
-                    <h3 class="action-title">Campagne de vaccination</h3>
-                    <p class="action-description">
-                        Organisation d'une campagne mobile de vaccination ayant touché 5 villages isolés, 
-                        avec plus de 500 enfants vaccinés contre les maladies infantiles courantes.
-                    </p>
-                    <div class="action-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">5</div>
-                            <div class="stat-label">Villages</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">Enfants</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">3</div>
-                            <div class="stat-label">Mois</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             
             <!-- Action 3 -->
             <div class="action-card">
                 <div class="action-image">
-                    <img src="https://via.placeholder.com/600x400?text=Projet+Culture" alt="Projet culture">
-                    <span class="action-badge">Culture</span>
+                    <div class="action-image">
+                    <img src="m2.png" alt="Projet éducation" class="slide active">
+                    <img src="m3.png" alt="Projet éducation" class="slide">
+                    <img src="m4.png" alt="Projet éducation" class="slide">
+                    <img src="m5.png" alt="Projet éducation" class="slide">
+                    <span class="action-badge">Dons</span>
+                </div>
+                    <span class="action-badge">Dons</span>
                 </div>
                 <div class="action-content">
-                    <div class="action-date">Septembre 2022</div>
-                    <h3 class="action-title">Festival des cultures locales</h3>
+                    <div class="action-date">Août 24,2025</div>
+                    <h3 class="action-title">Visite de l'orphélinat Le bon berger de Nkoabang</h3>
                     <p class="action-description">
-                        Édition annuelle du festival promouvant les traditions locales avec 30 groupes 
-                        participants et plus de 2000 visiteurs sur 3 jours d'animations culturelles.
+                        <span class="petittexte">
+                        Le dimanche 24 août 2025, nous avons fait une descente humanitaire dans cet orphelinat ayant un effectif de quatre-vingt (80) enfants. Cette action intervient dans le cadre de notre mission en faveur de la  promotion
+                        </span>
+                        <span class="longtexte" style="display:none">
+
+                            Le dimanche 24 août 2025, nous avons fait une descente humanitaire dans cet orphelinat ayant un effectif de quatre-vingt (80) enfants. Cette action intervient dans le cadre de notre mission en faveur de la  promotion de l'intégration socioculturelle de l’enfant et de son droit à l’éducation. C’est pourquoi nous avons sollicité la participation de AZERTY FORMATION.
+
+Cette descente avait pour objectif spécifique:
+- La participation à la scolarisation des enfants pour l’année académique 2025-2026
+- La participation à l’achat de leurs fournitures scolaires
+- L’appui moral et psychologique des enfants au travers des causeries éducatives, des ateliers de cuisines et autres activités de divertissement.
+- La participation au financement d’un élevage avicole en vue de générer des revenus permettant de supporter les activités quotidiennes de l’orphelinat voire le paiement des frais de scolarité d’autres élèves. 
+Cette journée s’est déroulée dans un esprit d’une kermesse afin que ces enfants puissent s’amuser tout en participant à son organisation.
+
+                        </span>
                     </p>
+                    
+              <a href="#" class="affichertout">en savoir plus</a> 
                     <div class="action-stats">
                         <div class="stat-item">
                             <div class="stat-number">30</div>
@@ -251,6 +258,46 @@ Nous en sommes ressorties galvanisés et prêts à soutenir le plus de populatio
         document.querySelector('.see-all-btn').addEventListener('click', function() {
             alert('Fonctionnalité à implémenter : afficher toutes les actions réalisées');
         });
-    </script>
+
+
+
+
+        document.querySelectorAll('.affichertout').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const parent = this.parentElement;
+    const shortText = parent.querySelector('.petittexte');
+    const fullText = parent.querySelector('.longtexte');
+
+    if (fullText.style.display === 'none') {
+      fullText.style.display = 'inline';
+      shortText.style.display = 'none';
+      this.textContent = 'en savoir moins';
+    } else {
+      fullText.style.display = 'none';
+      shortText.style.display = 'inline';
+      this.textContent = 'en savoir plus';
+    }
+  });
+});
+
+
+document.querySelectorAll('.action-image').forEach(actionImage => {
+  const slides = actionImage.querySelectorAll('.slide');
+  let currentIndex = 0;
+
+  // On affiche uniquement la première image au départ
+  slides.forEach((slide, index) => {
+    slide.style.display = (index === 0) ? 'block' : 'none';
+  });
+
+  setInterval(() => {
+    slides[currentIndex].style.display = 'none';
+    currentIndex = (currentIndex + 1) % slides.length;
+    slides[currentIndex].style.display = 'block';
+  }, 5000);
+});
+</script>
+    
 </body>
 </html>
